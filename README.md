@@ -15,7 +15,7 @@
 
 ## About
 
-Final-year Computer Science & Engineering student at **Jaypee University of Engineering and Technology**, specializing in backend systems development.
+Final-year Computer Science & Engineering student specializing in backend systems development.
 
 I design and build scalable backend architectures — RESTful services, database-driven systems, and API layers — with a strong emphasis on clean design and performance. My work is grounded in solid fundamentals across data structures, algorithms, and core CS theory.
 
