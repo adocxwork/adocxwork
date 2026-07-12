@@ -73,11 +73,11 @@ Deployed end-to-end on Vercel + Render. Lets creators consolidate their digital 
 <img src="https://github-readme-stats.vercel.app/api?username=adocxwork&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true" alt="Aditya's GitHub Stats" height="165" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=adocxwork&layout=compact&theme=github_dark&hide_border=true" alt="Top Languages" height="165" />
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=adocxwork&theme=github-dark&hide_border=true" alt="GitHub Streak" />
+<img src="https://streak-stats.demolab.com/?user=adocxwork&theme=github-dark&hide_border=true" alt="GitHub Streak" />
 
 </div>
 
-> Stats update automatically — no manual upkeep needed. `count_private` was dropped since it silently fails without a personal token wired into a self-hosted instance, which was likely why this section looked broken before.
+> If any card above shows a broken-image icon, that's this section's known fragility, not your markdown: these are live third-party services, and the shared stats.vercel.app instance occasionally rate-limits under global load. See the note at the bottom of this README for a zero-flakiness fix.
 
 ---
 
@@ -112,3 +112,39 @@ I'm open to backend engineering roles, technical discussions, open source collab
 <div align="center">
 <sub>📍 Varanasi, Uttar Pradesh, India</sub>
 </div>
+
+<!--
+============================================================
+OPTIONAL: Zero-flakiness fix for the GitHub Stats section
+============================================================
+The two cards above (Aditya's GitHub Stats, Top Languages) depend on
+github-readme-stats.vercel.app — a single free, shared Vercel deployment
+used by millions of GitHub profiles. It usually works, but it's known to
+rate-limit / time out under global load, which is what causes the
+broken-icon-plus-link rendering.
+
+The permanent fix is to generate these as STATIC SVGs in your own repo via
+GitHub Actions, so your README never depends on a live third-party
+service again. One-time setup, ~10 minutes:
+
+  1. Go to https://github.com/jstrieb/github-stats and click
+     "Use this template" -> create a new repo named e.g. "github-stats"
+     under your own account (adocxwork/github-stats).
+  2. Create a classic Personal Access Token:
+     GitHub Settings -> Developer settings -> Personal access tokens
+     (classic) -> Generate new token (classic). Grant read:user,
+     user:email, and repo scopes.
+  3. In your new adocxwork/github-stats repo: Settings -> Secrets and
+     variables -> Actions -> New repository secret. Name it
+     ACCESS_TOKEN and paste the token from step 2.
+  4. Go to the Actions tab in that repo and manually run the workflow
+     once. It regenerates automatically every 24 hours after that.
+  5. Replace the two <img> tags under "GitHub Stats" above with:
+
+       <img src="https://github.com/adocxwork/github-stats/blob/generated/overview.svg#gh-dark-mode-only" alt="Aditya's GitHub Stats" />
+       <img src="https://github.com/adocxwork/github-stats/blob/generated/languages.svg#gh-dark-mode-only" alt="Top Languages" />
+
+These now point to files committed inside your own repo, not a live
+external API — so they render every time, with no dependency on anyone
+else's uptime.
+-->
