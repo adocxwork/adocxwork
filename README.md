@@ -66,17 +66,6 @@ Deployed end-to-end on Vercel + Render. Lets creators consolidate their digital 
 
 ---
 
-## GitHub Activity
-
-<div align="center">
-
-[![Followers](https://img.shields.io/github/followers/adocxwork?style=for-the-badge&logo=github&color=181717&labelColor=0A0F1E)](https://github.com/adocxwork)
-[![Repos](https://img.shields.io/badge/dynamic/json?style=for-the-badge&logo=github&label=Public%20Repos&query=public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fadocxwork&color=181717&labelColor=0A0F1E)](https://github.com/adocxwork?tab=repositories)
-
-</div>
-
----
-
 ## Competitive Programming
 
 | Platform | Profile |
@@ -91,9 +80,9 @@ Deployed end-to-end on Vercel + Render. Lets creators consolidate their digital 
 ## Highlights
 
 - ♞ **Knight Tier on LeetCode** — 422+ problems solved, Contest Rating 1,878, top 5.24% of 875,443+ global competitors
+- 🚀 **Linkly** — Full-stack platform designed, built, and shipped to production solo
 - 🏆 **Flipkart GRiD 6.0 (2024)** — Competed among 4,84,300 participants
 - 🏆 **Adobe India Hackathon (2025)** — Competed among 2,62,261 candidates
-- 🚀 **Linkly** — Full-stack platform designed, built, and shipped to production solo
 
 ---
 
